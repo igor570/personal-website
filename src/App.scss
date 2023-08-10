@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.heroSection {
+  height: 100dvh;
+  width: 100%;
+  background-color: $main_color;
+}
+
+.projectsSection {
+  height: 100vh;
+  background-color: blue;
+}
+
+.contactSection {
+  height: 100vh;
+  background-color: red;
+}
