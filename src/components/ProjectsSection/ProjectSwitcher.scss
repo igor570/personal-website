@@ -1,0 +1,30 @@
+.subheaderWrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.subheaderText {
+  font-size: 90px;
+}
+
+.switcherContainer {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.switch {
+  padding: 1.5rem 5rem;
+  outline: 1px solid black;
+}
+
+.cardWrapper {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}

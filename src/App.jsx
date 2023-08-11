@@ -1,5 +1,6 @@
 import './App.scss'
 import NavBar from './components/NavBar'
+import ProjectSwitcher from './components/ProjectsSection/ProjectSwitcher'
 import ScrollBar from './components/ScrollBar'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         <section className='heroSection'>
           <div className='heroWrapper'>
             <div className='textWrapper'>
-              <div className='headerText'>Header</div>
+              <h1 className='headerText'>Header</h1>
               <div className='bodyText'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 fugit suscipit veritatis exercitationem totam tempore labore ab
@@ -22,7 +23,9 @@ function App() {
         </section>
         <ScrollBar />
 
-        <section id='projects' className='projectsSection'></section>
+        <section id='projects' className='projectsSection'>
+          <ProjectSwitcher />
+        </section>
 
         <section id='contact' className='contactSection'></section>
       </div>
