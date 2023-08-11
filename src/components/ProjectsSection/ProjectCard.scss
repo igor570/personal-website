@@ -1,9 +1,9 @@
-.cardImg {
-  width: 50%;
-}
-
 .projectWrapper {
   position: relative;
+}
+
+.cardImg {
+  width: 100%;
 }
 .cardWrap {
   display: inline-block;
@@ -15,16 +15,19 @@
   left: 2rem;
   top: 0;
   top: 80%;
+  color: white;
 }
 
 .gitLogo {
   position: absolute;
-  left: 35rem;
-  top: 90%;
+  left: 23.5rem;
+  top: 81.5%;
+  color: white;
 }
 
 .linkLogo {
   position: absolute;
-  left: rem;
-  top: 0;
+  color: white;
+  left: 20rem;
+  top: 81.5%;
 }

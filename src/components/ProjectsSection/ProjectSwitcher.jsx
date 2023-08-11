@@ -3,13 +3,54 @@ import './ProjectSwitcher.scss'
 import ProjectCard from './ProjectCard'
 
 const ProjectSwitcher = () => {
-  const [cards, setCards] = useState()
+  const [cardsTopic, setCardTopic] = useState('')
 
-  const projDetails = {
-    cardName: 'Ecommerce Page',
-    cardImg: '../src/assets/placeholder.jpg',
-    gitURL: 'test',
-    vercelURL: 'test',
+  const webprojDetails = [
+    {
+      id: crypto.randomUUID,
+      cardName: 'Ecommerce Page',
+      cardImg: '../src/assets/ecomProject.jpg',
+      gitURL: 'https://github.com/igor570/ecommerce-page-react',
+      vercelURL: 'https://ecommerce-page-react.vercel.app/',
+    },
+  ]
+
+  const gameprojDetails = [
+    {
+      id: crypto.randomUUID,
+      cardName: 'Game Page',
+      cardImg: '../src/assets/ecomProject.jpg',
+      gitURL: 'test',
+      vercelURL: 'test',
+    },
+  ]
+
+  function webTopic() {
+    setCardTopic(
+      webprojDetails.map((card, i) => (
+        <ProjectCard
+          key={card.id}
+          cardName={card.cardName}
+          cardImg={card.cardImg}
+          gitURL={card.gitURL}
+          vercelURL={card.vercelURL}
+        />
+      ))
+    )
+  }
+
+  function gameTopic() {
+    setCardTopic(
+      gameprojDetails.map((card, i) => (
+        <ProjectCard
+          key={card.id}
+          cardName={card.cardName}
+          cardImg={card.cardImg}
+          gitURL={card.gitURL}
+          vercelURL={card.vercelURL}
+        />
+      ))
+    )
   }
 
   return (
@@ -18,17 +59,14 @@ const ProjectSwitcher = () => {
         <h2 className='subheaderText'>Projects</h2>
       </div>
       <div className='switcherContainer'>
-        <div className='switch'>Option 1</div>
-        <div className='switch'>Option 2</div>
+        <div className='switch' onClick={() => webTopic()}>
+          Web Development
+        </div>
+        <div className='switch' onClick={() => gameTopic()}>
+          Game Development
+        </div>
       </div>
-      <div className='cardWrapper'>
-        <ProjectCard
-          cardName={projDetails.cardName}
-          cardImg={projDetails.cardImg}
-          gitURL={projDetails.gitURL}
-          vercelURL={projDetails.vercelURL}
-        />
-      </div>
+      <div className='cardWrapper'>{cardsTopic}</div>
     </>
   )
 }
