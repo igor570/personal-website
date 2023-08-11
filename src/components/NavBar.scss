@@ -1,0 +1,21 @@
+@import '../variables.scss';
+
+.nav {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $background_grey;
+}
+
+.navBarItems {
+  display: flex;
+  gap: 5rem;
+  margin-right: 3rem;
+  font-size: 18px;
+}
+
+.navItem {
+  text-decoration: none;
+  color: $main_color;
+}

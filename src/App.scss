@@ -5,21 +5,67 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+
+  font-family: 'Public Sans', sans-serif;
+}
+
+// .bodyWrapper {
+//   padding-left: 5rem;
+//   padding-right: 5rem;
+//   background-color: $main_color;
+// }
+// Hero Section Styling
+
+.heroSection {
+  min-height: 100dvh;
+  width: 100%;
+  background-color: $main_color;
+  display: flex;
+  align-items: center;
+}
+
+.heroWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  padding-right: 10rem;
+}
+
+.headerText {
+  font-size: 100px;
+  font-weight: 600;
+  width: max-content;
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.heroSection {
-  height: 100dvh;
-  width: 100%;
-  background-color: $main_color;
+.bodyText {
+  font-size: 46px;
+  font-weight: 400;
+  width: auto;
+}
+
+.img {
+  height: 10%;
+  width: auto;
+  margin-right: 5%;
 }
 
 .projectsSection {
-  height: 100vh;
+  min-height: 100dvh;
   background-color: blue;
 }
 
 .contactSection {
-  height: 100vh;
+  min-height: 100dvh;
   background-color: red;
+}
+
+//Projects Styling
+.projectsSection {
+  background-color: $main_color;
 }

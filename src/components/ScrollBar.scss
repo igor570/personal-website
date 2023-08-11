@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.scrollWrapper {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  background-color: $background_grey;
+  overflow: hidden;
+
+  .scroll {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+
+    div {
+      display: flex;
+      gap: 8rem;
+
+      p {
+        font-size: 38px;
+        color: $main_color;
+        font-weight: 700;
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    }
+  }
+
+  .rightToLeft {
+    animation: rightToLeft 30s linear infinite;
+  }
+
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
