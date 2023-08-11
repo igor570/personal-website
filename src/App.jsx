@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import ProjectSwitcher from './components/ProjectsSection/ProjectSwitcher'
 import Form from './components/ContactSection/Form'
 import ScrollBar from './components/ScrollBar'
+import ProjectStack from './components/ProjectsSection/ProjectStack'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
         <section id='projects' className='projectsSection'>
           <ProjectSwitcher />
+          <ProjectStack />
         </section>
 
         <section id='contact' className='contactSection'>

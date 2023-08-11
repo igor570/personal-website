@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ProjectCard.scss'
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai'
 
 const ProjectCard = ({ cardName, cardImg, gitURL, vercelURL }) => {
+  useEffect(() => {
+    console.log(cardName)
+  }, [])
   // Cards must be 450 x 300
   return (
     <div className='projectWrapper'>

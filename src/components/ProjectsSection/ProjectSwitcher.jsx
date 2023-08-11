@@ -3,7 +3,7 @@ import './ProjectSwitcher.scss'
 import ProjectCard from './ProjectCard'
 
 const ProjectSwitcher = () => {
-  const [cardsTopic, setCardTopic] = useState('')
+  const [cardsTopic, setCardTopic] = useState()
 
   const webprojDetails = [
     {
@@ -27,7 +27,7 @@ const ProjectSwitcher = () => {
 
   function webTopic() {
     setCardTopic(
-      webprojDetails.map((card, i) => (
+      webprojDetails.map((card) => (
         <ProjectCard
           key={card.id}
           cardName={card.cardName}
@@ -41,7 +41,7 @@ const ProjectSwitcher = () => {
 
   function gameTopic() {
     setCardTopic(
-      gameprojDetails.map((card, i) => (
+      gameprojDetails.map((card) => (
         <ProjectCard
           key={card.id}
           cardName={card.cardName}
@@ -59,10 +59,10 @@ const ProjectSwitcher = () => {
         <h2 className='subheaderText'>Projects</h2>
       </div>
       <div className='switcherContainer'>
-        <div className='switch' onClick={() => webTopic()}>
+        <div className='switch' onClick={webTopic}>
           Web Development
         </div>
-        <div className='switch' onClick={() => gameTopic()}>
+        <div className='switch' onClick={gameTopic}>
           Game Development
         </div>
       </div>
