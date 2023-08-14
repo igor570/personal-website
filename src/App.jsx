@@ -20,7 +20,7 @@ function App() {
                 rerum, rem deleniti.
               </div>
             </div>
-            <img className='img' src='./src/assets/placeholder.jpg' />
+            {/* <img className='img' src='./src/assets/placeholder.jpg' /> */}
           </div>
         </section>
         <ScrollBar />
