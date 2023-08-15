@@ -27,6 +27,14 @@
   outline: 1px solid white;
   border-radius: 0.3rem;
   color: white;
+  &:hover {
+    color: $material_blue;
+    background-color: white;
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    outline: none;
+  }
 }
 
 .cardWrapper {
