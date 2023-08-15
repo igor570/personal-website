@@ -1,9 +1,6 @@
 import React from 'react'
 import './ProjectStackCard.scss'
 
-//HTML, CSS, SCSS, JavaScript, React
-//Use react-icons for icons of each thing
-
 const ProjectStackCard = ({ name, icon }) => {
   return (
     <>
