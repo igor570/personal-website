@@ -13,12 +13,16 @@ function App() {
         <section className='heroSection'>
           <div className='heroWrapper'>
             <div className='textWrapper'>
-              <h1 className='headerText'>Hey there! 👋</h1>
+              <h1 className='headerText'>Hey there! I'm Igor 👋</h1>
               <div className='bodyText'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                fugit suscipit veritatis exercitationem totam tempore labore ab
-                rerum, rem deleniti.
+                A self-studying Junior Front End Developer who
+                <strong> loves</strong> solving problems! I am
+                <strong> looking for work</strong>, below you will find my
+                projects.
               </div>
+              <p className='bodyText'>
+                Let's work together - contact me below! 👇
+              </p>
             </div>
             {/* <img className='img' src='./src/assets/placeholder.jpg' /> */}
           </div>

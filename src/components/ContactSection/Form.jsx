@@ -49,39 +49,49 @@ const ContactForm = () => {
   }
 
   return (
-    <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method='POST'>
-      <div className='formContainer'>
-        <div>
-          <input
-            type='text'
-            placeholder='Your name'
-            name='name'
-            className='inputField'
-            required
-          />
+    <>
+      <form
+        action={FORM_ENDPOINT}
+        onSubmit={handleSubmit}
+        method='POST'
+        className='formWrapper'
+      >
+        <h2 className='contactHeader'>Get in Contact!</h2>
+        <div className='formContainer'>
+          <div>
+            <input
+              type='text'
+              placeholder='Your name'
+              name='name'
+              className='inputField'
+              required
+            />
+          </div>
+          <div>
+            <input
+              type='email'
+              placeholder='Email'
+              name='email'
+              className='inputField'
+              required
+            />
+          </div>
+          <div>
+            <textarea
+              placeholder='Your message'
+              name='message'
+              required
+              className='textField'
+            />
+          </div>
+          <div>
+            <button className='btn' type='submit'>
+              Send
+            </button>
+          </div>
         </div>
-        <div>
-          <input
-            type='email'
-            placeholder='Email'
-            name='email'
-            className='inputField'
-            required
-          />
-        </div>
-        <div>
-          <textarea
-            placeholder='Your message'
-            name='message'
-            required
-            className='textField'
-          />
-        </div>
-        <div>
-          <button type='submit'> Send a message </button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </>
   )
 }
 

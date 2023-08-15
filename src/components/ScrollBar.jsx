@@ -10,12 +10,12 @@ const ScrollBar = () => {
           <p>💻</p>
           <p>SEO Expert</p>
           <p>🔥</p>
-          <p>React.js Stan</p>
-          <p>🧑‍💻</p>
+          <p>Keyboard Builder</p>
+          <p>⌨️</p>
           <p>Corgi Enjoyer</p>
           <p>🐕</p>
-          <p>Databases are Cringe</p>
-          <p>❌</p>
+          <p>Open for Work!</p>
+          <p>📥</p>
         </div>
       </div>
     </div>

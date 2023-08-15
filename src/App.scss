@@ -37,13 +37,13 @@
 }
 
 .headerText {
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 600;
   width: max-content;
 }
 
 .bodyText {
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 400;
   width: auto;
   padding-top: 1.25rem;
@@ -56,16 +56,11 @@
 }
 
 .projectsSection {
-  min-height: 125dvh;
-  background-color: blue;
+  min-height: 150dvh;
+  background-color: $material_blue;
 }
 
 .contactSection {
   min-height: 100dvh;
-  background-color: red;
-}
-
-//Projects Styling
-.projectsSection {
-  background-color: cyan;
+  background-color: $dark_blue_grey;
 }
